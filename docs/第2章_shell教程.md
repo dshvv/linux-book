@@ -4,29 +4,58 @@ hide_title: true
 
 
 ## 什么是shell
-Shell 是一个用 C 语言编写的程序，它是用户使用 Linux 的桥梁。
+Shell 是一个用 C 语言编写的软件程序，它是用户使用 Linux 的桥梁。    
+我们一般说的shell 其实通常都是指的是 shell 脚本。    
+Shell脚本，是一种为 shell软件 编写的脚本程序（shell 和 shell脚本 是两个不同的概念）。    
 我们所要做的就是学习好常用的shell脚本,只有这样才能更好的使用linux。
 
-## Shell 环境
-Shell 编程跟 JavaScript、php 编程一样，只要有一个能编写代码的文本编辑器和一个能解释执行的脚本解释器就可以了。    
-Linux 的 Shell 种类众多，常见的有：
+## shell 环境
+shell 编程跟 javaScript、php 编程一样，只要有一个能编写代码的文本编辑器和一个能解释执行的脚本解释器就可以了。    
+linux 的 shell 种类众多，常见的有：
 ```shell
 Bourne Shell（/usr/bin/sh或/bin/sh）
 Bourne Again Shell（/bin/bash）
 C Shell（/usr/bin/csh）
 K Shell（/usr/bin/ksh）
 Shell for Root（/sbin/sh）
+zsh（）
 ……
 ```
-不同的shell具备不同的功能，shell还决定了脚本中函数的语法，流行的shell有ash、bash、ksh、csh、zsh等，不同的shell都有自己的特点以及用途。    
-本教程关注的是 Bash，也就是 Bourne Again Shell，由于易用和免费，Bash 在日常工作中被广泛使用。同时，Bash 也是大多数Linux 系统默认的 Shell。    
-在一般情况下，人们并不区分 Bourne Shell 和 Bourne Again Shell，所以，像 #!/bin/sh，它同样也可以改为 #!/bin/bash。    
-`#!` 告诉系统其后路径所指定的程序即是解释此脚本文件的 Shell 程序
+由于易用和免费，bash（也就是 Bourne Again Shell） 在日常工作中被广泛使用，也是大多数linux 系统默认的 shell。
+
+`#!` 用来指定解释此脚本文件的 Shell程序，如指定使用Bash
+```shell
+#!/bin/sh
+...
+```
+  
+> 一般情况下，人们并不区分 Bourne Shell 和 Bourne Again Shell，像 `#!/bin/sh`它同样也可以改为 `#!/bin/bash`。
+
+查看你的linux系统自带哪些shell
+```shell
+cat /etc/shells
+```
 
 查看当前使用的shell类型
 ```shell
 echo $SHELL
 ```
+
+## 运行 Shell 脚本
+运行 Shell 脚本有两种方法，分别如下：
+
+方式1：作为可执行程序, 将代码保存到test.sh
+```shell
+./test.sh  #执行脚本
+```
+
+方式2：运行解释器+参数（shell 脚本的文件名）
+```shell
+/bin/sh test.sh # 同理推导出php可以这样执行/bin/php test.php
+```
+
+
+<!-- 
 
 ## 命令-echo
 先学这一个命令吧，学会了这个命令方便后边的学习。    
@@ -159,4 +188,4 @@ fi
 | -gt |	检测左边的数是否大于右边的，如果是，则返回 true。 |	[ $a -gt $b ] 返回 false。 |
 | -lt |	检测左边的数是否小于右边的，如果是，则返回 true。 |	[ $a -lt $b ] 返回 true。 |
 | -ge |	检测左边的数是否大于等于右边的，如果是，则返回 true。 |	[ $a -ge $b ] 返回 false。 |
-| -le |	检测左边的数是否小于等于右边的，如果是，则返回 true。 |	[ $a -le $b ] 返回 true。 |
+| -le |	检测左边的数是否小于等于右边的，如果是，则返回 true。 |	[ $a -le $b ] 返回 true。 | -->
