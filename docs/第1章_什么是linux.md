@@ -1,4 +1,7 @@
-# 第1章 什么是linux
+---
+hide_title: true
+---
+
 ## 简介
 Linux，全称GNU/Linux，是一种免费使用和自由传播的操作系统，对比你用的windows就是收费的。   
 Linux有上百种不同的发行版，一般我们使用都是使用其发行版，而不会直接使用托瓦兹1991发布的内核（从技术上来说，托瓦兹开发的只是Linux的内核）。
@@ -18,7 +21,7 @@ Linux有上百种不同的发行版，一般我们使用都是使用其发行版
 
 我们平常所说的安装个Linux操作系统指的都是安装一个Linux的发行版。   
 用的最多的两个发行版本，一个CentOS，另一个Ubuntu。
-![封面](/images/1-1.jpg#xxl)
+![封面](/img/1-1.jpg#xxl)
 
 不同发行系统，内置的软件也不同，如软件管理器：
 | 系统 | 软件安装管理器 |
@@ -48,9 +51,9 @@ Linux发行版本虽然众多，但是真正属于原始构建的Linux版本只�
 这就决定了Ubuntu/CentOS和Debian/Redhat大多数情况下可能非常一致，但又有一些不同。    
 CentOS只是把Redhat的品牌信息去掉，Ubuntu在Debian的基础上做了许多的变更，如加了Snap软件管理。   
 以下介绍了大致的发行版本之间的关系    
-![封面](/images/1-2.png)   
+![封面](/img/1-2.png)   
 
 ## 拓展
 既然Linux有内核，那么Windows有内核么？    
 Windows显然也是有内核的说法的，命令`VER`即可查看当前windows系统的内核版本号。   
-![封面](/images/1-3.png#l) 
+![封面](/img/1-3.png#l) 
