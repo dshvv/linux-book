@@ -20,7 +20,7 @@ const config = {
   title: "linux手册",
   tagline: "学它，你就可以干掉运维",
   url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
+  baseUrl: "/linux-book/build/", // 主要是为了配合gitPage，否则默认 "/" 即可
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
