@@ -23,7 +23,7 @@ jobs:
     - name: Install packges 🔧  # 第二步，安装依赖
     - run: npm install
     
-    - name: Build # 第三步，打包编译
+    - name: Build 📦 # 第三步，打包编译
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
