@@ -19,14 +19,17 @@ Linux有上百种不同的发行版，一般我们使用都是使用其发行版
 
 知道有这些就行了，没人会直接用内核做系统。
 ## linux发行版
+Linux 的发行版说简单点就是将 Linux 内核与应用软件做一个打包
+
 现有超过300个Linux发行版，而且大多数都比较活跃，这些发布者既有商业公司，也有开源社区。
 
-国外出名发行版有Ubuntu，Fedora，小红帽，CentOS，Debian。国内发行版有中兴新支点、统信uos等、红旗Linux以及相对比较成熟的深度deepin。
+国外出名发行版有Ubuntu，Fedora，RedHat，CentOS，Debian。    
+国内发行版有中兴新支点、统信uos等、红旗Linux以及相对比较成熟的深度deepin。
 
 我们平常所说的安装个Linux操作系统指的都是安装一个Linux的发行版。
 ![封面](/img/1-1.jpg)
 
-不同发行系统，内置的软件也不尽同，如软件管理器：Redhat用的是yum，Debian用的是deb，而Arch则用的是pacman（类似于ios的apple store）
+不同发行系统，内置的软件也不尽同，如软件管理器：Redhat用的是yum，Debian用的是deb，而Arch则用的是pacman
 
 ## 查看版本
 如何查看Linux内核版本号和发行版本号呢？    
@@ -43,7 +46,7 @@ uname -a
 ```
 
 ## 二次封装
-Linux发行版本虽然众多，但是真正属于原始构建的Linux版本只有少数几个。   
+Linux发行版本虽然众多，但是真正属于原始内核构建的Linux版本只有少数几个。   
 比如Ubuntu是基于Debian二次封装的，CentOS则是基于Redhat。   
 这就决定了Ubuntu/CentOS和Debian/Redhat大多数情况下可能非常一致，但又有一些不同。    
 CentOS只是把Redhat的品牌信息去掉，Ubuntu在Debian的基础上做了许多的变更，如加了Snap软件管理。   
