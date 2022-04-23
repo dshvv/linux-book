@@ -70,7 +70,7 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "第1章_什么是linux",
+            docId: "第1章_啥是linux",
             position: "left",
             label: "文档",
           },
