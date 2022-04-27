@@ -4,32 +4,25 @@ hide_title: true
 
 
 ## 什么是shell
-Shell 是一个用 C 语言编写的软件程序，它是用户使用 Linux 的桥梁。    
-我们一般说的shell 其实通常都是指的是 shell 脚本。    
-Shell脚本，是一种为 shell软件 编写的脚本程序（shell 和 shell脚本 是两个不同的概念）。    
-我们所要做的就是学习好常用的shell脚本,只有这样才能更好的使用linux。
+有没有想过你在linux上输入的命令回车之后为何能被执行？    
+回车之后，你的命令其实会被shell去解释这条命令，所以核心是shell
+
+shell 是一个用 C 语言编写的软件(也称之为脚本解释器)，它是用户使用 Linux 的桥梁。       
+shell脚本，是一种为 shell软件 编写的脚本。  
+学习好shell脚本,才能更好的使用linux。
 
 ## shell 环境
-shell 编程跟 javaScript、php 编程一样，只要有一个能编写代码的文本编辑器和一个能解释执行的脚本解释器就可以了。    
-linux 的 shell 种类众多，常见的有：
+跟 js、php 编程一样，只要有一个能解释执行shell脚本解释器就可以了。linux 的 shell解释器种类众多，常见的有：
 ```shell
 Bourne Shell（/usr/bin/sh或/bin/sh）
 Bourne Again Shell（/bin/bash）
 C Shell（/usr/bin/csh）
 K Shell（/usr/bin/ksh）
 Shell for Root（/sbin/sh）
-zsh（）
+zsh
 ……
 ```
 由于易用和免费，bash（也就是 Bourne Again Shell） 在日常工作中被广泛使用，也是大多数linux 系统默认的 shell。
-
-`#!` 用来指定解释此脚本文件的 Shell程序，如指定使用Bash
-```shell
-#!/bin/sh
-...
-```
-  
-> 一般情况下，人们并不区分 Bourne Shell 和 Bourne Again Shell，像 `#!/bin/sh`它同样也可以改为 `#!/bin/bash`。
 
 查看你的linux系统自带哪些shell
 ```shell
@@ -39,6 +32,13 @@ cat /etc/shells
 查看当前使用的shell类型
 ```shell
 echo $SHELL
+```
+
+## 指定shell
+`#!` 用来指定用何解释 来此脚本文件的 Shell程序，如指定使用Bash
+```shell
+#!/bin/sh
+...
 ```
 
 ## 运行 Shell 脚本
