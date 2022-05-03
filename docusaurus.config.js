@@ -18,7 +18,7 @@ function reverseSidebarItems(items) {
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "linux手册",
-  tagline: "学它，你就可以干掉运维",
+  tagline: "学它，你就可以干掉运维 --- 丁少华😂",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/linux-book/build/", // 主要是为了配合gitPage，否则默认 "/" 即可
   onBrokenLinks: "throw",
